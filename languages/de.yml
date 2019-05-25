@@ -1,0 +1,47 @@
+common:
+    archive:
+        one: 'Archiv'
+        other: 'Archiv'
+    category:
+        one: 'Kategorie'
+        other: 'Kategorien'
+    tag:
+        one: 'Tag'
+        other: 'Tags'
+    post:
+        one: 'Beitrag'
+        other: 'Beiträge'
+    prev: 'Zurück'
+    next: 'Weiter'
+widget:
+    follow: 'Folgen'
+    recents: 'In den letzten Tagen erschienen'
+    links: 'Links'
+    tag_cloud: 'Tag Cloud'
+    catalogue: 'Katalog'
+article:
+    more: 'Weiterlesen'
+    comments: 'Kommentare'
+    read: 'Lesen'
+    about: 'Über'
+    words: 'Wörter'
+donate:
+    title: 'Magst du den Inhalt? Unterstütze den Autoren'
+    alipay: 'Alipay'
+    wechat: 'Wechat'
+    paypal: 'Paypal'
+    patreon: 'Patreon'
+plugin:
+    backtotop: 'Zum Anfang'
+    visit: '%s Besuche'
+    visitor: 'Wurde von %s Benutzern besucht'
+search:
+    search: 'Suche'
+    hint: 'Suchbegriffe eingeben...'
+insight:
+    hint: 'Tippe etwas...'
+    posts: 'Beiträge'
+    pages: 'Seiten'
+    categories: 'Kategorien'
+    tags: 'Tags'
+    untitled: '(Ohne Titel)'

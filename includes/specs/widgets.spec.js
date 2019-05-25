@@ -141,7 +141,7 @@ module.exports = {
         position: {
             [type]: 'string',
             [doc]: 'Where should the widget be placed, left or right',
-            [format]: /^(left|right)$/,
+            [format]: /^(left|right|do_not_show)$/,
             [required]: true,
             [defaultValue]: 'left'
         },
