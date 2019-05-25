@@ -21,8 +21,18 @@ module.exports = function (hexo) {
         if (!hasWidgets) {
             return [];
         }
+
         const widgets = hexo.extend.helper.get('get_config').bind(this)('widgets');
-        return widgets.filter(widget => widget.hasOwnProperty('position') && widget.position === position);
+        if (!position) {
+            return widgets;
+        } else {
+            return widgets.filter(widget => widget.hasOwnProperty('position') && widget.position === position);
+        }
+    });
+
+    hexo.extend.helper.register('get_widget_by_type', function (type) {
+        const widgets = hexo.extend.helper.get('get_widgets').bind(this)(null);
+        return widgets.find(widget => widget.hasOwnProperty('type') && widget.type === type);
     });
 
     hexo.extend.helper.register('has_column', function (position) {
