@@ -13,7 +13,7 @@ html
     font-size: 14px
 
 body
-    background-color: #f7f7f7
+    background-color: #DEB887
 
 body, button, input, select, textarea
     font-family: family-sans
@@ -49,10 +49,6 @@ body, button, input, select, textarea
         &.is-sticky
             top: 1.5rem
 
-.tag
-    &.is-grey
-        background: #e7e7e7
-
 .card
     border-radius: 4px
     box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1)
@@ -67,6 +63,70 @@ body, button, input, select, textarea
         border-top-left-radius: 4px
         border-top-right-radius: 4px
 
+.pace.pace-active
+    .pace-progress
+        background-color: hsl(25, 76%, 5%) !important
+
+
+.has-text-grey
+.has-link-black-ter
+    color: hsl(25, 76%, 5%) !important
+.has-link-grey
+    color: hsl(25, 76%, 55%)
+.tag
+.tag:not(body)
+    color: hsl(25, 76%, 5%)
+    background-color: hsl(25, 76%, 95%)
+    &.is-link
+    &.is-grey
+        color: white
+        background-color: hsl(25, 76%, 35%)
+
+.button
+    &.is-light
+        color: white
+        background-color:  hsl(25, 76%, 55%)
+        &:hover
+            color: white
+            background-color:  hsl(25, 76%, 35%)
+
+.card-content
+    .menu
+        .menu-label
+            color: hsl(25, 76%, 5%)
+            font-weight: bold
+        .level-item
+            color: hsl(25, 76%, 5%)
+            &.tag
+                color: white
+                background-color: hsl(25, 76%, 35%)
+        .menu-list
+            .level
+                &.is-marginless:hover
+                &.is-mobile:hover
+                    background-color: hsl(25, 76%, 95%)
+    .menu-label
+        color: hsl(25, 76%, 5%)
+        font-weight: bold
+        .media-content
+            color: hsl(25, 76%, 5%)
+    .has-link-black-ter
+
+    .breadcrumb
+        a
+            color: hsl(25, 76%, 55%)
+            &:hover
+                color: hsl(25, 76%, 35%)
+        .is-active
+            color: hsl(25, 76%, 5%)
+
+
+
+
+    &.article
+        color: hsl(25, 76%, 5%)
+
+
 img.thumbnail
     object-fit: cover
     width: 100%
@@ -78,6 +138,7 @@ img.thumbnail
         max-height: 1.75rem
 
 .navbar-main
+    background-color: hsl(25, 76%, 85%)
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05)
     .navbar-menu,
     .navbar-start,
@@ -100,9 +161,13 @@ img.thumbnail
         display: flex
         align-items: center
         padding: 1.25rem 0.75rem
+        color: hsl(25, 76%, 55%)
         &.is-active
-            color: hsl(217, 71%, 53%)
+            color: hsl(25, 76%, 5%)
             background-color: transparent
+        &:hover
+            color: hsl(25, 76%, 5%)
+            background-color: hsl(25, 76%, 95%)
     @media screen and (max-width: screen-desktop - 1)
         .navbar-menu
             justify-content: center
@@ -113,10 +178,16 @@ img.thumbnail
             margin-left: 0
 
 .footer
-    background: white
+    background-color: hsl(25, 76%, 85%)
     .field
         .button
             background: transparent
+    p
+        color: hsl(25, 76%, 5%)
+        a
+            color: hsl(25, 76%, 55%)
+            &:hover
+                color: hsl(25, 76%, 5%)
 
 .widget
     .media
@@ -144,7 +215,7 @@ img.thumbnail
     margin-left: 1rem
     padding-left: 1.5rem
     padding-top: 1rem
-    border-left: 1px solid hsl(0, 0%, 86%)
+    border-left: 1px solid hsl(25, 76%, 35%)
     .media
         position: relative
         &:before,
@@ -157,7 +228,7 @@ img.thumbnail
             width: 9px
             height: 9px
             top: 1.3rem
-            background: hsl(0, 0%, 86%)
+            background: hsl(25, 76%, 35%)
             border-radius: 50%
         &:first-child:before
             top: 0.3rem
@@ -181,6 +252,9 @@ img.thumbnail
             position: relative
         a
             word-wrap: break-word
+            color: hsl(25, 76%, 55%)
+            &:hover
+                color: hsl(25, 76%, 5%)
 
 .rtl
      direction: rtl
@@ -298,13 +372,7 @@ img.thumbnail
 .has-link-black-ter
     transition: 0.2s ease
     &:hover
-        color: hsl(217, 71%, 53%) !important
-
-.has-link-grey
-    color: hsl(0, 0%, 48%) !important
-
-.has-link-black-ter
-    color: hsl(0, 0%, 14%) !important
+        color: #8B4513 !important
 
 @media screen and (max-width: screen-tablet - 1)
     .has-text-centered-mobile
@@ -344,14 +412,18 @@ img.thumbnail
         background: transparent
         padding: 0
     blockquote
+        background-color: hsl(25, 76%, 95%)
+        color: hsl(25, 76%, 5%)
         footer
             strong + cite
                 margin-left: 0.5em
+        border-left: 5px solid hsl(25, 76%, 35%)
 
 /* ---------------------------------
  *        Fix code highlight
  * --------------------------------- */
 figure.highlight
+    background-color: hsl(25, 76%, 95%)
     padding: 0
     width: 100%
     position: relative
@@ -368,6 +440,7 @@ figure.highlight
     table
         width: auto
 
+
     pre
         padding: 0
         overflow: visible
@@ -377,9 +450,12 @@ figure.highlight
 
     figcaption,
     .gutter
-        background: rgba(200, 200, 200, 0.15)
+        color: white
+        background-color: hsl(25, 76%, 75%)
 
     figcaption
+        color: white
+        background-color: hsl(25, 76%, 45%)
         padding: .3em .75em
         text-align: left
         font-style: normal
