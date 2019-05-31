@@ -17,6 +17,7 @@
                     class: 'has-link-grey ',
                     show_count: false,
                     style: 'none',
+                    depth: 1,
                     separator: '&nbsp;/&nbsp;'
                 }) %>
                 </div>
@@ -55,7 +56,8 @@
                     <%- list_tags(post.tags, {
                         class: 'has-link-grey ',
                         show_count: false,
-                        style: 'link'
+                        style: 'link',
+                        separator: ',&nbsp;'
                     }) %>
                 </div>
             </div>
