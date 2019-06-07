@@ -13,7 +13,7 @@ html
     font-size: 14px
 
 body
-    background-color: #DEB887
+    background-color: hsl(42, 59%, 74%)
 
 body, button, input, select, textarea
     font-family: family-sans
@@ -73,10 +73,13 @@ body, button, input, select, textarea
     color: hsl(25, 76%, 5%) !important
 .has-link-grey
     color: hsl(25, 76%, 55%)
+    &.article-nav-prev
+    &.article-nav-next
+        color: hsl(25, 76%, 5%)
 .tag
 .tag:not(body)
     color: hsl(25, 76%, 5%)
-    background-color: hsl(25, 76%, 95%)
+    background-color: hsl(42, 59%, 74%)
     &.is-link
     &.is-grey
         color: white
@@ -104,7 +107,7 @@ body, button, input, select, textarea
             .level
                 &.is-marginless:hover
                 &.is-mobile:hover
-                    background-color: hsl(25, 76%, 95%)
+                    background-color: hsl(42, 59%, 74%)
     .menu-label
         color: hsl(25, 76%, 5%)
         font-weight: bold
@@ -138,11 +141,13 @@ img.thumbnail
         max-height: 1.75rem
 
 .navbar-main
-    background-color: hsl(25, 76%, 85%)
+    background-color: hsl(25, 76%, 5%)
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05)
     .navbar-menu,
+    .navbar-logo,
     .navbar-start,
     .navbar-end
+        background-color: hsl(25, 76%, 5%)
         align-items: stretch
         display: flex
         padding: 0
@@ -163,11 +168,11 @@ img.thumbnail
         padding: 1.25rem 0.75rem
         color: hsl(25, 76%, 55%)
         &.is-active
-            color: hsl(25, 76%, 5%)
+            color: hsl(25, 76%, 100%)
             background-color: transparent
         &:hover
             color: hsl(25, 76%, 5%)
-            background-color: hsl(25, 76%, 95%)
+            background-color: hsl(25, 76%, 100%)
     @media screen and (max-width: screen-desktop - 1)
         .navbar-menu
             justify-content: center
@@ -178,16 +183,30 @@ img.thumbnail
             margin-left: 0
 
 .footer
-    background-color: hsl(25, 76%, 85%)
-    .field
-        .button
-            background: transparent
-    p
-        color: hsl(25, 76%, 5%)
-        a
-            color: hsl(25, 76%, 55%)
-            &:hover
-                color: hsl(25, 76%, 5%)
+    background-color: hsl(25, 76%, 5%)
+    color: hsl(25, 76%, 100%)
+    a
+        color: hsl(25, 76%, 55%)
+        &:hover
+            color: hsl(25, 76%, 5%)
+            background-color: hsl(25, 76%, 100%)
+    .container
+        .level-start
+            a.footer-logo
+                &:hover
+                    background-color: hsl(25, 76%, 5%)
+        .level-end
+            a
+                color: hsl(25, 76%, 55%)
+                &:hover
+                    color: hsl(25, 76%, 5%)
+                    background-color: hsl(25, 76%, 100%)
+
+        .field
+            .button
+                background: transparent
+
+
 
 .widget
     .media
@@ -412,7 +431,7 @@ img.thumbnail
         background: transparent
         padding: 0
     blockquote
-        background-color: hsl(25, 76%, 95%)
+        background-color: hsl(42, 59%, 74%)
         color: hsl(25, 76%, 5%)
         footer
             strong + cite
@@ -423,7 +442,7 @@ img.thumbnail
  *        Fix code highlight
  * --------------------------------- */
 figure.highlight
-    background-color: hsl(25, 76%, 95%)
+    background-color: hsl(42, 59%, 74%)
     padding: 0
     width: 100%
     position: relative
@@ -451,11 +470,11 @@ figure.highlight
     figcaption,
     .gutter
         color: white
-        background-color: hsl(25, 76%, 75%)
+        background-color: hsl(25, 76%, 35%)
 
     figcaption
         color: white
-        background-color: hsl(25, 76%, 45%)
+        background-color: hsl(25, 76%, 25%)
         padding: .3em .75em
         text-align: left
         font-style: normal
