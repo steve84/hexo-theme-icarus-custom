@@ -8,11 +8,11 @@
     <% function main_column_class() {
         switch (column_count()) {
             case 1:
-                return 'is-12';
+                return 'is-full';
             case 2:
-                return 'is-8-tablet is-8-desktop is-8-widescreen';
+                return 'is-two-thirds-tablet is-two-thirds-desktop is-two-thirds-widescreen';
             case 3:
-                return 'is-8-tablet is-8-desktop is-6-widescreen'
+                return 'is-three-fifths-tablet is-three-fifths-desktop is-three-fifths-widescreen'
         }
         return '';
     } %>
