@@ -559,3 +559,34 @@ figure.highlight
             border: none
     .file
         all: initial
+
+  /* ---------------------------------
+   *        Searchbox
+   * --------------------------------- */
+   .searchbox-container.ins-search-container
+        .searchbox-input-wrapper
+            .searchbox-input
+                background-color: hsl(25, 76%, 35%)
+                color: hsl(25, 76%, 100%)
+                border-bottom: 1px solid hsl(25, 76%, 35%)
+                &::placeholder
+                    color: hsl(25, 76%, 100%)
+            .searchbox-close
+                color: hsl(25, 76%, 100%)
+                &:hover
+                    color: hsl(25, 76%, 5%)
+        .ins-section-container
+            color: hsl(25, 76%, 5%)
+            background-color: hsl(42, 59%, 74%)
+            .ins-section-header
+                border-bottom: 1px solid hsl(25, 76%, 5%)
+                color: hsl(25, 76%, 5%)
+                background-color: hsl(42, 59%, 82%)
+            .ins-search-item
+                &:hover
+                    background-color: white
+                    color: hsl(25, 76%, 5%)
+                .ins-search-preview
+                .ins-slug
+                    color: hsl(25, 76%, 5%)
+                    font-style: italic
