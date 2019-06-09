@@ -5,7 +5,7 @@
             <% if (logo && logo.text) { %>
                 <%= logo.text %>
             <% } else { %>
-                <img src="<%- url_for(logo) %>" alt="<%= title %>" height="28">
+                <img src="<%- url_for(get_config('logo')) %>" alt="<%= get_config('title') %>">
             <% } %>
             </a>
         </div>
