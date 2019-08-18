@@ -5,7 +5,7 @@ favicon: /images/favicon.svg
 # Path or URL to RSS atom.xml
 rss:
 # Path or URL to the website's logo to be shown on the left of the navigation bar or footer
-logo: /images/logo.svg
+logo: /images/banner.jpg
 
 # Open Graph metadata
 # https://hexo.io/docs/helpers.html#open-graph
@@ -29,6 +29,8 @@ navbar:
         Kategorien: /categories
         Tags: /tags
         Über mich: /about
+        Impressum: /impressum
+        Datenschutz: /privacy
     # Navigation bar links to be shown on the right
     links:
         # Download on GitHub:
@@ -38,9 +40,12 @@ navbar:
 footer:
     # Links to be shown on the right of the footer section
     links:
-        Creative Commons:
-            icon: fab fa-creative-commons
-            url: 'https://creativecommons.org/'
+        Impressum:
+            url: 'impressum'
+            icon: ''
+        Datenschutz:
+            url: 'privacy'
+            icon: ''
 # Article display settings
 article:
     # Code highlight theme
@@ -125,17 +130,17 @@ widgets:
         # Widget name
         type: toc
         # Where should the widget be placed, left or right
-        position: left
+        position: right
     -
         # Widget name
         type: category
         # Where should the widget be placed, left or right
-        position: left
+        position: right
     -
         # Widget name
         type: links
         # Where should the widget be placed, left or right
-        position: left
+        position: do_not_show
         # Links to be shown in the links widget
         links:
             Hexo: 'https://hexo.io'
@@ -154,12 +159,12 @@ widgets:
         # Widget name
         type: archive
         # Where should the widget be placed, left or right
-        position: right
+        position: do_not_show
     -
         # Widget name
         type: tag
         # Where should the widget be placed, left or right
-        position: right
+        position: do_not_show
 # Other plugin settings
 plugins:
     # Enable page animations
