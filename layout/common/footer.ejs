@@ -25,12 +25,11 @@
                 <% for (let name in links) {
                         let link = links[name]; %>
                 <p class="control">
-                    <a class="button is-white <%= typeof(link) !== 'string' ? 'is-large' : '' %>" target="_blank" title="<%= name %>" href="<%= url_for(typeof(link) === 'string' ? link : link.url) %>">
-                        <% if (typeof(link) === 'string') { %>
-                        <%= name %>
-                        <% } else { %>
-                        <i class="<%= link.icon %>"></i>
+                    <a class="button is-white <%= typeof(link) !== 'string' ? 'is-large' : '' %>" target="<%= link.url.startsWith('http') ? '_blank' : '_self' %>" title="<%= name %>" href="<%= url_for(typeof(link) === 'string' ? link : link.url) %>">
+                        <% if (link.icon && link.icon.length > 0) { %>
+                          <span style="margin-right: 5px;"><i class="<%= link.icon %>"></i></span>
                         <% } %>
+                        <span><%= name %></span>
                     </a>
                 </p>
                 <% } %>

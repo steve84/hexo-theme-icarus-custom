@@ -18,7 +18,7 @@ widget:
     recents: 'In den letzten Tagen erschienen'
     links: 'Links'
     tag_cloud: 'Tag Cloud'
-    catalogue: 'Katalog'
+    catalogue: 'Inhalt'
 article:
     more: 'Weiterlesen'
     comments: 'Kommentare'
