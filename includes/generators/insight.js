@@ -7,7 +7,7 @@ module.exports = function (hexo) {
     hexo.extend.generator.register('insight', function (locals) {
         const url_for = hexo.extend.helper.get('url_for').bind(this);
         function minify(str) {
-            return util.stripHTML(str).trim().replace(/\n/g, ' ').replace(/\s+/g, ' ')
+            return str.trim().replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ')
                 .replace(/&#x([\da-fA-F]+);/g, function (match, hex) {
                     return String.fromCharCode(parseInt(hex, 16));
                 })
