@@ -48,6 +48,9 @@ footer:
         Datenschutz:
             url: 'privacy'
             icon: ''
+        Über finanzlabor.blog:
+            url: 'about'
+            icon: ''
 # Article display settings
 article:
     # Code highlight settings
