@@ -7,7 +7,7 @@ meta:
 # Path or URL to RSS atom.xml
 rss:
 # Path or URL to the website's logo to be shown on the left of the navigation bar or footer
-logo: /images/banner.jpg
+logo: /images/banner.png
 
 # Open Graph metadata
 # https://hexo.io/docs/helpers.html#open-graph
@@ -30,7 +30,7 @@ navbar:
         Archiv: /archives
         Kategorien: /categories
         Tags: /tags
-        Über mich: /about
+        Über finanzlabor.blog: /about
         Impressum: /impressum
         Datenschutz: /privacy
     # Navigation bar links to be shown on the right
