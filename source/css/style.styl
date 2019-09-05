@@ -1,10 +1,17 @@
-family-sans = "Ubuntu", "Roboto", "Open Sans", "Microsoft YaHei", sans-serif
-family-mono = "Source Code Pro", monospace, "Microsoft YaHei"
+family-sans = "Cabin", "Roboto", sans-serif,  "Verdana"
+family-mono = "Source Code Pro", monospace, "Courier New"
 gap = 64px
 screen-tablet = 769px
 screen-desktop = 1088px
 screen-widescreen = 1280px
 screen-fullhd = 1472px
+
+custom_background_menu_hover_color = hsl(42, 59%, 74%)
+custom_font_color = hsl(25, 76%, 5%)
+custom_label_background_color = hsl(25, 76%, 35%)
+custom_button_color = hsl(25, 76%, 55%)
+custom_link_header_footer_color = white
+custom_figcaption_background = hsl(25, 76%, 25%)
 
 /* ---------------------------------
  *       Override CSS Framework
@@ -13,7 +20,7 @@ html
     font-size: 14px
 
 body
-    background-color: hsl(42, 59%, 74%)
+    background-color: custom_background_menu_hover_color
 
 body, button, input, select, textarea
     font-family: family-sans
@@ -65,73 +72,73 @@ body, button, input, select, textarea
 
 .pace.pace-active
     .pace-progress
-        background-color: hsl(25, 76%, 5%) !important
+        background-color: custom_font_color !important
 
 
 .has-text-grey
 .has-link-black-ter
-    color: hsl(25, 76%, 5%) !important
+    color: custom_font_color !important
 .has-link-grey
-    color: hsl(25, 76%, 55%)
+    color: custom_button_color
     &.article-nav-prev
     &.article-nav-next
-        color: hsl(25, 76%, 5%)
+        color: custom_font_color
 .tag
 .tag:not(body)
-    color: hsl(25, 76%, 5%)
-    background-color: hsl(42, 59%, 74%)
+    color: custom_font_color
+    background-color: custom_background_menu_hover_color
     &.is-link
     &.is-grey
         color: white
-        background-color: hsl(25, 76%, 35%)
+        background-color: custom_label_background_color
 
 .button
     &.is-light
         color: white
-        background-color:  hsl(25, 76%, 55%)
+        background-color:  custom_button_color
         &:hover
             color: white
-            background-color:  hsl(25, 76%, 35%)
+            background-color:  custom_label_background_color
 
 .card-content
     .menu
         .menu-label
-            color: hsl(25, 76%, 5%)
+            color: custom_font_color
             font-weight: bold
         .level-item
-            color: hsl(25, 76%, 5%)
+            color: custom_font_color
             &.tag
                 color: white
-                background-color: hsl(25, 76%, 35%)
+                background-color: custom_label_background_color
         .menu-list
             a
-                color: hsl(25, 76%, 5%)
+                color: custom_font_color
                 &:hover
-                    background-color: hsl(42, 59%, 74%)
+                    background-color: custom_background_menu_hover_color
             .level
                 &.is-marginless:hover
                 &.is-mobile:hover
-                    background-color: hsl(42, 59%, 74%)
+                    background-color: custom_background_menu_hover_color
     .menu-label
-        color: hsl(25, 76%, 5%)
+        color: custom_font_color
         font-weight: bold
         .media-content
-            color: hsl(25, 76%, 5%)
+            color: custom_font_color
     .has-link-black-ter
 
     .breadcrumb
         a
-            color: hsl(25, 76%, 55%)
+            color: custom_button_color
             &:hover
-                color: hsl(25, 76%, 35%)
+                color: custom_label_background_color
         .is-active
-            color: hsl(25, 76%, 5%)
+            color: custom_font_color
 
 
 
 
     &.article
-        color: hsl(25, 76%, 5%)
+        color: custom_font_color
 
 
 img.thumbnail
@@ -144,7 +151,7 @@ img.thumbnail
         max-height: 190px
 
 .navbar-main
-    background-color: hsl(25, 76%, 5%)
+    background-color: custom_font_color
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05)
     .container
         display: block
@@ -154,7 +161,7 @@ img.thumbnail
     .navbar-logo,
     .navbar-start,
     .navbar-end
-        background-color: hsl(25, 76%, 5%)
+        background-color: custom_font_color
         align-items: stretch
         display: flex
         padding: 0
@@ -175,13 +182,13 @@ img.thumbnail
         display: flex
         align-items: center
         padding: 1.25rem 0.75rem
-        color: hsl(25, 76%, 55%)
+        color: custom_button_color
         &.is-active
-            color: hsl(25, 76%, 100%)
+            color: custom_link_header_footer_color
             background-color: transparent
         &:hover
-            color: hsl(25, 76%, 5%)
-            background-color: hsl(25, 76%, 100%)
+            color: custom_font_color
+            background-color: custom_link_header_footer_color
         &.navbar-logo
             padding: 0px
     .navbar-brand
@@ -189,24 +196,24 @@ img.thumbnail
 
 
 .footer
-    background-color: hsl(25, 76%, 5%)
-    color: hsl(25, 76%, 100%)
+    background-color: custom_font_color
+    color: custom_link_header_footer_color
     a
-        color: hsl(25, 76%, 55%)
+        color: custom_button_color
         &:hover
-            color: hsl(25, 76%, 5%)
-            background-color: hsl(25, 76%, 100%)
+            color: custom_font_color
+            background-color: custom_link_header_footer_color
     .container
         .level-start
             a.footer-logo
                 &:hover
-                    background-color: hsl(25, 76%, 5%)
+                    background-color: custom_font_color
         .level-end
             a
-                color: hsl(25, 76%, 55%)
+                color: custom_button_color
                 &:hover
-                    color: hsl(25, 76%, 5%)
-                    background-color: hsl(25, 76%, 100%)
+                    color: custom_font_color
+                    background-color: custom_link_header_footer_color
 
         .field
             .button
@@ -242,7 +249,7 @@ img.thumbnail
     margin-left: 1rem
     padding-left: 1.5rem
     padding-top: 1rem
-    border-left: 1px solid hsl(25, 76%, 35%)
+    border-left: 1px solid custom_label_background_color
     .media
         position: relative
         &:before,
@@ -255,7 +262,7 @@ img.thumbnail
             width: 9px
             height: 9px
             top: 1.3rem
-            background: hsl(25, 76%, 35%)
+            background: custom_label_background_color
             border-radius: 50%
         &:first-child:before
             top: 0.3rem
@@ -279,9 +286,9 @@ img.thumbnail
             position: relative
         a
             word-wrap: break-word
-            color: hsl(25, 76%, 55%)
+            color: custom_button_color
             &:hover
-                color: hsl(25, 76%, 5%)
+                color: custom_font_color
 
 .rtl
      direction: rtl
@@ -439,18 +446,18 @@ img.thumbnail
         background: transparent
         padding: 0
     blockquote
-        background-color: hsl(42, 59%, 74%)
-        color: hsl(25, 76%, 5%)
+        background-color: custom_background_menu_hover_color
+        color: custom_font_color
         footer
             strong + cite
                 margin-left: 0.5em
-        border-left: 5px solid hsl(25, 76%, 35%)
+        border-left: 5px solid custom_label_background_color
 
 /* ---------------------------------
  *        Fix code highlight
  * --------------------------------- */
 figure.highlight
-    background-color: hsl(42, 59%, 74%)
+    background-color: custom_background_menu_hover_color
     padding: 0
     width: 100%
     position: relative
@@ -478,11 +485,11 @@ figure.highlight
     figcaption,
     .gutter
         color: white
-        background-color: hsl(25, 76%, 35%)
+        background-color: custom_label_background_color
 
     figcaption
         color: white
-        background-color: hsl(25, 76%, 25%)
+        background-color: custom_figcaption_background
         padding: .3em .75em
         text-align: left
         font-style: normal
@@ -572,27 +579,27 @@ figure.highlight
    .searchbox-container.ins-search-container
         .searchbox-input-wrapper
             .searchbox-input
-                background-color: hsl(25, 76%, 35%)
-                color: hsl(25, 76%, 100%)
-                border-bottom: 1px solid hsl(25, 76%, 35%)
+                background-color: custom_label_background_color
+                color: custom_link_header_footer_color
+                border-bottom: 1px solid custom_label_background_color
                 &::placeholder
-                    color: hsl(25, 76%, 100%)
+                    color: custom_link_header_footer_color
             .searchbox-close
-                color: hsl(25, 76%, 100%)
+                color: custom_link_header_footer_color
                 &:hover
-                    color: hsl(25, 76%, 5%)
+                    color: custom_font_color
         .ins-section-container
-            color: hsl(25, 76%, 5%)
-            background-color: hsl(42, 59%, 74%)
+            color: custom_font_color
+            background-color: custom_background_menu_hover_color
             .ins-section-header
-                border-bottom: 1px solid hsl(25, 76%, 5%)
-                color: hsl(25, 76%, 5%)
+                border-bottom: 1px solid custom_font_color
+                color: custom_font_color
                 background-color: hsl(42, 59%, 82%)
             .ins-search-item
                 &:hover
                     background-color: white
-                    color: hsl(25, 76%, 5%)
+                    color: custom_font_color
                 .ins-search-preview
                 .ins-slug
-                    color: hsl(25, 76%, 5%)
+                    color: custom_font_color
                     font-style: italic
