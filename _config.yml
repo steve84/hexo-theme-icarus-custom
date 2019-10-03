@@ -1,7 +1,7 @@
 # Version of the Icarus theme that is currently used
 version: 2.6.0
 # Path or URL to the website's icon
-favicon: /images/favicon.svg
+favicon: /images/favicon.png
 # Additional HTML meta tags in an array.
 meta:
 # Path or URL to RSS atom.xml
@@ -79,7 +79,7 @@ comment:
     owner: steve84
     repo: finanzlabor.blog
     client_id: 3e4b893e46c959437efa
-    client_secret: 
+    client_secret:
     admin: steve84
 # Donation entries
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Donation/
