@@ -9,9 +9,13 @@ screen-fullhd = 1472px
 custom_background_menu_hover_color = hsl(42, 59%, 74%)
 custom_font_color = hsl(25, 76%, 5%)
 custom_label_background_color = hsl(25, 76%, 35%)
-custom_button_color = hsl(25, 76%, 55%)
+custom_button_color = hsl(25, 76%, 40%)
+custom_button_header_footer_color = hsl(25, 76%, 55%)
 custom_link_header_footer_color = white
-custom_figcaption_background = hsl(25, 76%, 25%)
+
+custom_figcaption_background = hsl(220, 13%, 18%)
+custom_figcaption_gutter_background = hsl(220, 13%, 88%)
+custom_figcaption_link_color = hsl(220, 13%, 38%)
 
 /* ---------------------------------
  *       Override CSS Framework
@@ -184,7 +188,7 @@ img.thumbnail
         display: flex
         align-items: center
         padding: 1.25rem 0.75rem
-        color: custom_button_color
+        color: custom_button_header_footer_color
         &.is-active
             color: custom_link_header_footer_color
             background-color: transparent
@@ -201,7 +205,7 @@ img.thumbnail
     background-color: custom_font_color
     color: custom_link_header_footer_color
     a
-        color: custom_button_color
+        color: custom_button_header_footer_color
         &:hover
             color: custom_font_color
             background-color: custom_link_header_footer_color
@@ -212,7 +216,7 @@ img.thumbnail
                     background-color: custom_font_color
         .level-end
             a
-                color: custom_button_color
+                color: custom_button_header_footer_color
                 &:hover
                     color: custom_font_color
                     background-color: custom_link_header_footer_color
@@ -459,7 +463,11 @@ img.thumbnail
  *        Fix code highlight
  * --------------------------------- */
 figure.highlight
-    background-color: custom_background_menu_hover_color
+    a
+        color: custom_figcaption_background !important
+        &:hover
+            color: custom_figcaption_link_color !important
+    background-color: custom_figcaption_background
     padding: 0
     width: 100%
     position: relative
@@ -476,7 +484,6 @@ figure.highlight
     table
         width: auto
 
-
     pre
         padding: 0
         overflow: visible
@@ -486,12 +493,10 @@ figure.highlight
 
     figcaption,
     .gutter
-        color: white
-        background-color: custom_label_background_color
+        color: black
+        background-color: custom_figcaption_gutter_background
 
     figcaption
-        color: white
-        background-color: custom_figcaption_background
         padding: .3em .75em
         text-align: left
         font-style: normal
@@ -507,7 +512,7 @@ figure.highlight
 
         .fold
         a
-            color: #9a9a9a
+            color: custom_figcaption_background
 
         a
             float: right
