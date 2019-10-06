@@ -35,9 +35,10 @@ navbar:
         Datenschutz: /privacy
     # Navigation bar links to be shown on the right
     links:
-        # Download on GitHub:
-        #     icon: fab fa-github
-        #     url: 'https://github.com/ppoffice/hexo-theme-icarus'
+        #Facebook:
+        #    icon: 'fab fa-facebook'
+        #    url: https://www.facebook.com/Finanzlabor-2738051906209104
+
 # Footer section link settings
 footer:
     # Links to be shown on the right of the footer section
@@ -51,6 +52,15 @@ footer:
         Über finanzlabor.blog:
             url: 'about'
             icon: ''
+        Facebook:
+            icon: 'fab fa-facebook'
+            url: https://www.facebook.com/Finanzlabor-2738051906209104
+        Instagram:
+            icon: 'fab fa-instagram'
+            url: https://www.instagram.com/finanzlabor
+        Twitter:
+            icon: 'fab fa-twitter'
+            url: https://twitter.com/finanzlabor
 # Article display settings
 article:
     # Code highlight settings
@@ -75,12 +85,7 @@ search:
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment
 comment:
     # Name of the comment plugin
-    type: gitalk
-    owner: steve84
-    repo: finanzlabor.blog
-    client_id: 3e4b893e46c959437efa
-    client_secret:
-    admin: steve84
+
 # Donation entries
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Donation/
 donate:
