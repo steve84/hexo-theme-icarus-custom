@@ -29,10 +29,10 @@
 <link rel="icon" href="<%- url_for(get_config('favicon')) %>">
 <% } %>
 
-<%- _css(cdn('bulma', '0.7.2', 'css/bulma.css')) %>
+<%- _css(cdn('bulma', '0.7.2', 'css/bulma.min.css')) %>
 <%- _css(iconcdn()) %>
 <%- _css(fontcdn('Source+Code+Pro|Cabin|Roboto')) %>
-<%- _css(cdn('highlight.js', '9.12.0', 'styles/' + get_config('article.highlight.theme') + '.css')) %>
+<%- _css(cdn('highlight.js', '9.12.0', 'styles/' + get_config('article.highlight.theme') + '.min.css')) %>
 
 <% if (has_config('plugins')) { %>
     <% for (let plugin in get_config('plugins')) { %>
