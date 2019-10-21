@@ -8,7 +8,7 @@
             <% if (thumbnail) { %>
             <a href="<%- url_for(post.link ? post.link : post.path) %>" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="<%= post.thumbnail %>" alt="<%= post.title %>">
+                    <img class="thumbnail" src="<%= get_thumbnail_square(post) %>" alt="<%= post.title %>">
                 </p>
             </a>
             <% } %>

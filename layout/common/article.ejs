@@ -37,6 +37,11 @@
                 </span>
                 <% } %>
             </div>
+            <div class="level-left">
+              <% if (!index && has_config('share.type')) { %>
+              <%- _partial('share/' + get_config('share.type')) %>
+              <% } %>
+            </div>
         </div>
         <% } %>
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
@@ -72,9 +77,6 @@
                 </div>
             </div>
         </div>
-        <% } %>
-        <% if (!index && has_config('share.type')) { %>
-        <%- _partial('share/' + get_config('share.type')) %>
         <% } %>
     </div>
 </div>

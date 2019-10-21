@@ -60,6 +60,17 @@ module.exports = function (hexo) {
         return this.url_for(hasThumbnail ? post.thumbnail : 'images/thumbnail.svg');
     });
 
+    hexo.extend.helper.register('get_thumbnail_square', function (post) {
+        const hasThumbnail = hexo.extend.helper.get('has_thumbnail').bind(this)(post);
+        let squareLocation;
+        if (hasThumbnail) {
+          let indexOfPoint = post.thumbnail.lastIndexOf('.');
+          squareLocation = post.thumbnail.slice(0, indexOfPoint) + '_square' + post.thumbnail.slice(indexOfPoint);
+        }
+
+        return this.url_for(hasThumbnail ? squareLocation : 'images/thumbnail.svg');
+    });
+
     hexo.extend.helper.register('has_og_image', function (post) {
         return post.hasOwnProperty('og_image');
     });
