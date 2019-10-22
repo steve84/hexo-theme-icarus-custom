@@ -35,9 +35,12 @@ navbar:
         Datenschutz: /privacy
     # Navigation bar links to be shown on the right
     links:
-        #Facebook:
-        #    icon: 'fab fa-facebook'
-        #    url: https://www.facebook.com/Finanzlabor-2738051906209104
+        Facebook:
+           icon: 'fab fa-facebook'
+           url: https://www.facebook.com/Finanzlabor-2738051906209104
+        Twitter:
+           icon: 'fab fa-twitter'
+           url: https://www.facebook.com/Finanzlabor-2738051906209104
 
 # Footer section link settings
 footer:
