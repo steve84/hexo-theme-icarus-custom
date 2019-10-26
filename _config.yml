@@ -38,9 +38,12 @@ navbar:
         Facebook:
            icon: 'fab fa-facebook'
            url: https://www.facebook.com/Finanzlabor-2738051906209104
+        Instagram:
+            icon: 'fab fa-instagram'
+            url: https://www.instagram.com/finanzlabor
         Twitter:
            icon: 'fab fa-twitter'
-           url: https://www.facebook.com/Finanzlabor-2738051906209104
+           url: https://twitter.com/finanzlabor
 
 # Footer section link settings
 footer:

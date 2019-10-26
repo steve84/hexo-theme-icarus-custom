@@ -23,8 +23,16 @@
                 <% } %>
             <% } %>
 
+            <% if (hasToc) { %>
+            <a class="navbar-item is-hidden-tablet catalogue" title="<%= _p('widget.catalogue', Infinity) %>" href="javascript:;">
+                <i class="fas fa-list-ul"></i>
+            </a>
+            <% } %>
+
             <a class="navbar-burger">
-                <i class="fas fa-bars"></i>
+                <span></span>
+                <span></span>
+                <span></span>
             </a>
         </div>
         <div class="navbar-menu">
@@ -37,11 +45,6 @@
             </div>
             <% } %>
             <div class="navbar-end">
-                <% if (hasToc) { %>
-                <a class="navbar-item is-hidden-tablet catalogue" title="<%= _p('widget.catalogue', Infinity) %>" href="javascript:;">
-                    <i class="fas fa-list-ul"></i>
-                </a>
-                <% } %>
                 <% if (search) { %>
                 <a class="navbar-item search" title="<%= __('search.search') %>" href="javascript:;">
                     <i class="fas fa-search"></i>

@@ -163,11 +163,13 @@ img.thumbnail
     .navbar-burger
         color: custom_button_header_footer_color
         background-color: custom_font_color
-        &.is-active
-            color: custom_link_header_footer_color
-        &:hover
-            color: custom_font_color
-            background-color: custom_link_header_footer_color
+        a
+            &.is-active
+                color: custom_link_header_footer_color
+                background-color: custom_font_color
+            &:hover
+                color: custom_font_color
+                background-color: custom_link_header_footer_color
     .navbar-brand
         a
             &.navbar-item
