@@ -9,6 +9,13 @@
     <% } %>
     <div class="card-content article <%= post.hasOwnProperty('direction') ? post.direction : '' %>">
         <% if (post.layout != 'page') { %>
+          <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+              <div class="level-left">
+                  <% if (!index && has_config('share.type')) { %>
+                      <%- _partial('share/' + get_config('share.type')) %>
+                  <% } %>
+              </div>
+          </div>
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
                 <time class="level-item has-text-grey" datetime="<%= date_xml(post.date) %>"><%= date(post.date) %></time>
@@ -37,11 +44,6 @@
                 </span>
                 <% } %>
             </div>
-            <div class="level-left">
-              <% if (!index && has_config('share.type')) { %>
-              <%- _partial('share/' + get_config('share.type')) %>
-              <% } %>
-            </div>
         </div>
         <% } %>
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
@@ -67,6 +69,11 @@
                     }) %>
                 </div>
             </div>
+        </div>
+        <div>
+            <% if (!index && has_config('share.type')) { %>
+                <%- _partial('share/' + get_config('share.type')) %>
+            <% } %>
         </div>
         <% } %>
         <% if (index && post.excerpt) { %>
