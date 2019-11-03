@@ -65,6 +65,10 @@ const DEFAULT_WIDGETS = [
     {
         type: 'tag',
         position: 'right'
+    },
+    {
+        type: 'mailchimp',
+        position: 'right'
     }
 ];
 

@@ -173,6 +173,9 @@ widgets:
         # Where should the widget be placed, left or right
         position: right
     -
+        type: mailchimp
+        position: do_not_show
+    -
         # Widget name
         type: links
         # Where should the widget be placed, left or right

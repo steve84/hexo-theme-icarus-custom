@@ -19,6 +19,9 @@ widget:
     links: 'Links'
     tag_cloud: 'Tag Cloud'
     catalogue: 'Catalogue'
+    subscribe_title: 'Subscribe'
+    subscribe_button: 'Subscribe'
+    mail_address: 'Email Address'
 article:
     more: 'Read More'
     comments: 'Comments'
