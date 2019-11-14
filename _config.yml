@@ -46,7 +46,7 @@ navbar:
            url: https://twitter.com/finanzlabor
         RSS Feed:
            icon: 'fas fa-rss'
-           url: rss.xml
+           url: rss2.xml
 
 # Footer section link settings
 footer:
@@ -72,7 +72,7 @@ footer:
             url: https://twitter.com/finanzlabor
         RSS Feed:
             icon: 'fas fa-rss'
-            url: rss.xml
+            url: rss2.xml
 # Article display settings
 article:
     # Code highlight settings
