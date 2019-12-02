@@ -101,7 +101,7 @@ comment:
     owner: steve84
     repo: finanzlabor.blog
     client_id: acb6812b349e00c0364c
-    client_secret: 9992e6cc1af00d3d93f29c54bafba47ccc8df155
+    client_secret: GULP_GITALK
     admin: steve84
 # Donation entries
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Donation/
@@ -228,7 +228,7 @@ plugins:
     # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/#Google-Analytics
     google-analytics:
         # Google Analytics tracking id
-        tracking_id: UA-146513464-1
+        tracking_id: GULP_GA
     # Baidu Analytics plugin settings
     # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/#Baidu-Analytics
     baidu-analytics:
