@@ -224,11 +224,31 @@ img.thumbnail
         margin: auto
 
 .pagination
-    .pagination-link:not(.is-current), .pagination-previous, .pagination-next
-        background: white
-        border: none
-    .pagination-link, .pagination-previous, .pagination-next
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05)
+        div
+            &.pagination-next,
+            &.pagination-previous
+                background: custom_button_color !important
+                border-color: white
+                &:hover
+                    background: custom_label_background_color !important
+                a
+                    color: white !important
+
+        li
+            a
+                &.pagination-link
+                    background: white !important
+                    color: custom_font_color !important
+                    border-color: custom_font_color
+                &.pagination-link:not(.is-current)
+                    background: custom_button_color !important
+                    color: white !important
+                    border-color: white
+                    &:hover
+                        background: custom_label_background_color !important
+
+
+
 
 .post-navigation
     justify-content: space-around
