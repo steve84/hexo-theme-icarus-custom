@@ -97,12 +97,7 @@ search:
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment
 comment:
     # Name of the comment plugin
-    type: gitalk
-    owner: steve84
-    repo: finanzlabor.blog
-    client_id: acb6812b349e00c0364c
-    client_secret: GULP_GITALK
-    admin: steve84
+
 # Donation entries
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Donation/
 donate:
